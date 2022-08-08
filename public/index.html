@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Node Oauth2 Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script type="text/javascript" src="https://www.poddin.io/sdk/sdk.min.js"></script>
+</head>
+<body>
+  <div id="transcript"><!-- button place holder --></div>
+  <script type="text/javascript">
+    // first param is the id that Where to put the button： 
+    const poddin = new PoddinSDK('transcript', {
+      clientId: '2',
+      redirectUri: 'http://localhost:8000/oauth/callback',
+      logoUrl: '',
+    });
+  </script>
+</body>
+</html>

@@ -15,10 +15,5 @@ Now, run the server.
 ```bash
 $ yarn start
 ```
-Open a new terminal, run
-```bash
-$ yarn run tailwind
-```
- build the css file.
 
-Visit http://localhost:8001 in your browser, and click the button.
+Visit http://localhost:8000 in your browser, and click the button.

@@ -8,8 +8,8 @@
   "scripts": {
     "start": "node index",
     "build": "npm run minify && npm run tailwind",
-    "tailwind": "tailwindcss -i ./public/style/input.css -o ../public/sdk/output.css --watch",
-    "minify": "minify ./public/js/sdk.js > ../public/sdk/sdk.min.js"
+    "tailwind": "tailwindcss -i ./public/style/input.css -o ./public/style/output.css --watch",
+    "minify": "minify ./public/js/sdk.js > ./public/js/sdk.min.js"
   },
   "dependencies": {
     "aws-sdk": "^2.1181.0",
