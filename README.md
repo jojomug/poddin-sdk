@@ -8,7 +8,7 @@
 $ yarn install
 ```
 
-## Step three
+## Step two
 
 Now, run the server.
 
