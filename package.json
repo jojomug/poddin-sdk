@@ -6,19 +6,13 @@
   "author": "poddin",
   "license": "MIT",
   "scripts": {
-    "start": "node index",
-    "build": "npm run minify && npm run tailwind",
-    "tailwind": "tailwindcss -i ./public/style/input.css -o ./public/style/output.css --watch",
-    "minify": "minify ./public/js/sdk.js > ./public/js/sdk.min.js"
+    "start": "node index"
   },
   "dependencies": {
-    "aws-sdk": "^2.1181.0",
     "axios": "^0.18.0",
     "koa": "^2.7.0",
     "koa-route": "^3.2.0",
     "koa-static": "^5.0.0",
-    "minify": "^9.1.0",
-    "query-string": "^7.1.1",
-    "tailwindcss": "^3.1.4"
+    "query-string": "^7.1.1"
   }
 }
