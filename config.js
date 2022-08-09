@@ -11,7 +11,7 @@
   serverRedirectUri: `${oauthServer}/oauth/authorize`,
   // Claim token from oauth server
   oauthTokenUri: `${oauthServer}/oauth/token`,
-  port: 8000
+  port: 8003
 }
 
 module.exports = config
