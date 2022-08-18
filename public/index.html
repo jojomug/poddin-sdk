@@ -6,19 +6,19 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Node Oauth2 Demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="poddin-transcribe-app-id" content="5">
   <script type="text/javascript" src="https://dev.poddin.io/sdk/sdk.min.js?_t=78fadf6"></script>
 </head>
 <body>
-  <div id="transcript"><!-- button place holder --></div>
+  <div class="poddinWrap" data-onsuccess="onPoddinLogin"></div>
+  <script type="text/javascript" src="/js/sdk.js"></script>
   <script type="text/javascript">
-    // first param is the id that Where to put the button： 
-    const poddin = new PoddinSDK('transcript', {
-      oauthServer: 'https://dev.poddin.io',
-      appServer: 'https://app.dev.poddin.io',
-      clientId: '5',
-      redirectUri: 'https://demo.poddin.io',
-      logoUrl: '/img/yourlogo.png',
-    });
-  </script>
+    async function onPoddinLogin (poddinUser) {
+      let profile = await poddinUser.getProfile()
+      let transcriptionList = await poddinUser.getTranscriptionList()
+      console.log("profile", profile)
+      console.log("transcription list", transcriptionList) 
+    }
+</script>
 </body>
 </html>
