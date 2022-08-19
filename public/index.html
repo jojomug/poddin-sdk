@@ -12,9 +12,8 @@
 <body>
   <div class="poddinWrap" data-onsuccess="onPoddinLogin"></div>
   <script type="text/javascript">
-    async function onPoddinLogin (poddinUser) {
-      let profile = await poddinUser.getProfile()
-      let transcriptionList = await poddinUser.getTranscriptionList()
+    function onPoddinLogin (poddinUser) {
+      let { profile, transcriptionList } = poddinUser
       console.log("profile", profile)
       console.log("transcription list", transcriptionList) 
     }
